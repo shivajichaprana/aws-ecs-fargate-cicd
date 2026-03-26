@@ -1,0 +1,38 @@
+# AWS Account & Region
+aws_region     = "us-east-1"
+aws_account_id = "123456789012"
+
+# Project
+project_name = "nginx-fargate-demo"
+environment  = "dev"
+
+# ECS Configuration
+ecs_task_cpu    = 256
+ecs_task_memory = 512
+desired_count   = 1
+min_capacity    = 1
+max_capacity    = 4
+
+# Container
+container_port = 80
+container_name = "nginx"
+
+# Scaling Thresholds
+cpu_target_value    = 70
+memory_target_value = 80
+
+# Networking
+vpc_cidr            = "10.0.0.0/16"
+public_subnet_cidrs = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnet_cidrs = ["10.0.3.0/24", "10.0.4.0/24"]
+
+# GitHub OIDC
+github_org  = "shivajichaprana"
+github_repo = "nginx-platform"
+
+# Tags
+tags = {
+  Project     = "ecs-fargate-cicd"
+  ManagedBy   = "terraform"
+  Environment = "dev"
+}
