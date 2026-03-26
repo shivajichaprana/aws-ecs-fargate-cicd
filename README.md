@@ -64,6 +64,12 @@ curl http://$(terraform output -raw alb_dns_name):80
 curl http://$(terraform output -raw alb_dns_name):8080
 ```
 
+[![Terraform](https://img.shields.io/badge/Terraform-1.5+-623CE4?logo=terraform)](https://www.terraform.io/)
+[![AWS](https://img.shields.io/badge/AWS-ECS%20Fargate-FF9900?logo=amazonaws)](https://aws.amazon.com/fargate/)
+[![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?logo=githubactions)](https://github.com/features/actions)
+[![OIDC](https://img.shields.io/badge/Auth-OIDC%20Keyless-green)](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ### 3. Setup Production Repository
 See [DEPLOYMENT-CHECKLIST.md](./DEPLOYMENT-CHECKLIST.md)
 
