@@ -19,7 +19,7 @@
 ### 1. Deploy Infrastructure (15 minutes)
 
 ```bash
-cd /Users/shivajichaprana/Desktop/Learning/ecs-automation-project/infrastructure
+cd <your-checkout>/ecs-automation-project/infrastructure
 
 # Review changes
 terraform plan
@@ -41,7 +41,7 @@ terraform output
 ### 2. Create GitHub Repository (5 minutes)
 
 ```bash
-cd /Users/shivajichaprana/Desktop/Learning/nginx-platform-prod
+cd <your-checkout>/nginx-platform-prod
 
 # Initialize git
 git init
@@ -49,19 +49,19 @@ git add .
 git commit -m "Initial production deployment setup"
 
 # Create GitHub repo
-gh repo create shivajichaprana/nginx-platform-prod --public --source=. --push
+gh repo create <your-org>/nginx-platform-prod --public --source=. --push
 
 # Or manually:
 # 1. Create repo on GitHub: https://github.com/new
 # 2. Push code:
-git remote add origin git@github.com:shivajichaprana/nginx-platform-prod.git
+git remote add origin git@github.com:<your-org>/nginx-platform-prod.git
 git branch -M main
 git push -u origin main
 ```
 
 ### 3. Configure GitHub Environment (5 minutes)
 
-1. Go to: https://github.com/shivajichaprana/nginx-platform-prod/settings/environments
+1. Go to: https://github.com/<your-org>/nginx-platform-prod/settings/environments
 2. Click **New environment**
 3. Name: `production`
 4. Check **Required reviewers**
@@ -102,7 +102,7 @@ echo "Latest image tag: $IMAGE_TAG"
 ```
 
 Then:
-1. Go to: https://github.com/shivajichaprana/nginx-platform-prod/actions
+1. Go to: https://github.com/<your-org>/nginx-platform-prod/actions
 2. Click **Production Canary Deployment**
 3. Click **Run workflow**
 4. Enter:

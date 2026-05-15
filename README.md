@@ -14,13 +14,13 @@ ecs-automation-project/
 ## Environments
 
 ### Development (Automated)
-- **Repository**: `shivajichaprana/nginx-platform`
+- **Repository**: `<your-org>/nginx-platform`
 - **ALB Port**: 80
 - **Deployment**: Auto-deploy on push to main
 - **Service**: nginx-fargate-demo-service (1-4 tasks)
 
 ### Production (Manual Canary)
-- **Repository**: `shivajichaprana/nginx-platform-prod`
+- **Repository**: `<your-org>/nginx-platform-prod`
 - **ALB Port**: 8080
 - **Deployment**: Manual approval required
 - **Service**: nginx-fargate-demo-prod-service (2-8 tasks)
@@ -99,8 +99,8 @@ See [DEPLOYMENT-CHECKLIST.md](./DEPLOYMENT-CHECKLIST.md)
 - **Region**: us-east-1
 - **ECS Cluster**: nginx-fargate-demo-cluster
 - **ECR Repository**: nginx-demo
-- **Dev Repo**: shivajichaprana/nginx-platform
-- **Prod Repo**: shivajichaprana/nginx-platform-prod
+- **Dev Repo**: <your-org>/nginx-platform
+- **Prod Repo**: <your-org>/nginx-platform-prod
 
 ## Security
 
