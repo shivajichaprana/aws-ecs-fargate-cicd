@@ -95,7 +95,7 @@ See [DEPLOYMENT-CHECKLIST.md](./DEPLOYMENT-CHECKLIST.md)
 
 ## AWS Resources
 
-- **Account**: 975050061334
+- **Account**: `<your-aws-account-id>`
 - **Region**: us-east-1
 - **ECS Cluster**: nginx-fargate-demo-cluster
 - **ECR Repository**: nginx-demo
